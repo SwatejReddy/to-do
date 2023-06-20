@@ -1,0 +1,148 @@
+.body-div {
+  margin: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+  margin: 10px 0px 0px 0px;
+}
+
+.tasks-adder {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.plus-icon {
+  margin-right: 15px;
+  align-items: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.text-box {
+  height: 32px;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+  box-shadow: 0px 0.9px 2px 0.3px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  flex: 1 1 auto;
+  padding-left: 10px;
+}
+
+#text-box::placeholder {
+  color: black;
+}
+
+.add-btn {
+  background: none;
+  background-color: #e1ecc8;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2.5px;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0.15px rgba(0, 0, 0, 0.3);
+  flex: 0 0 auto;
+  transition: 0.1s;
+}
+
+.add-btn:hover {
+  background-color: #c4d7b2;
+}
+.add-btn:active {
+  background-color: #b0c89a;
+}
+
+.task-list-container {
+  /* display: flex; */
+}
+
+.task-list {
+  /* flex: 1; */
+  width: 100%;
+}
+
+.task {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  transition: 3s;
+}
+
+.task-p {
+  flex: 1;
+  word-wrap: break-word;
+  max-width: 10%;
+  min-width: 97%;
+}
+
+.del-img {
+  margin: 0px 20px 0px 15px;
+  cursor: pointer;
+}
+
+/* .checkbox {
+  height: 17px;
+  width: 17px;
+  margin: 0px 5px 0px 15px;
+} */
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 17px;
+  width: 17px;
+  margin: 0px 5px 0px 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #a0c49d;
+  border-color: #a0c49d;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #a0c49d;
+  border-radius: 2px;
+  opacity: 0;
+  /* transition: opacity 0.2s ease; */
+}
+
+/* .checkbox:checked::before {
+  opacity: 1;
+} */
+
+/* Optional: Hover effect */
+/* .checkbox:hover {
+  border-color: black;
+} */
+
+/* .checkbox:checked:hover {
+  background-color: #c4d7b2;
+  border-color: #c4d7b2;
+} */
